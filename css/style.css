@@ -135,19 +135,11 @@ nav div.right{
 
 /* Sections */
 
-div.container section.login div.containerLogin div.grid{
-    display: grid;
-    grid-column-gap: 24px;
-    grid-row-gap: 24px;
-    grid-template-columns: repeat(3, 1fr);
-}
-
 div.container{
     height: 100vh;
     min-height: 100%;
     display: flex;
     flex-direction: column;
-    background-color: var(--primary);
 }
 
 section{
@@ -171,7 +163,13 @@ section p{
 }
 
 section.login{
+    background-color: var(--primary);
+    padding: 10px;
+}
 
+section.infoIndex{
+    background-color: var(--primary);
+    padding: 10px;
 }
 
 section.login div.containerLogin{
@@ -200,10 +198,6 @@ section.login div.containerLogin form{
     margin: 30px;
 }
 
-section.login div.containerLogin form *{
-    display: block;
-}
-
 section.login div.containerLogin form div{
     margin: 5px 0;
 }
@@ -211,9 +205,16 @@ section.login div.containerLogin form div{
 section.login div.containerLogin form div.input{
     display: flex;
     flex-direction:row;
+    align-items: center;
     border: 1px solid var(--primary-light);
     border-radius: 18px;
     overflow: hidden;
+}
+
+label{
+    font-weight: 500;
+    font-size: 12px;
+    color: var(--secondary-dark);
 }
 
 section.login div.containerLogin form div.input input{
@@ -232,9 +233,12 @@ section.login div.containerLogin form div.input a.showPassword{
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    border-radius: 18px;
-    padding: 0 10px;
+    border-radius: 100%;
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
     color: var(--secondary);
+    margin: 5px;
 }
 
 section.login div.containerLogin form div.input a.showPassword:hover{
@@ -282,6 +286,7 @@ section.login div.containerLogin form a.buttonRegistro{
     padding: 10px 10px;
     color: var(--primary-light);
     margin: 5px 0;
+    text-align: center;
 }
 
 section.login div.containerLogin form a.buttonRegistro:hover{
@@ -291,4 +296,53 @@ section.login div.containerLogin form a.buttonRegistro:hover{
 section.login div.containerLogin form hr{
     margin: 20px 0;
     border: 1px dashed var(--secondary-light);
+}
+
+div.grid{
+    display: grid;
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media screen and (max-width: 1265px){
+    div.grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 765px){
+    div.grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Icons */
+
+.icon{
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon.show-off{
+    background-image: url(../imgs/icons/eye-solid.svg);
+}
+
+.icon.show-on{
+    background-image: url(../imgs/icons/eye-slash-solid.svg);
+}
+
+.icon.logout{
+    width: 22px;
+    height: 22px;
+    margin-left: 15px;
+    -webkit-mask-image: url(../imgs/icons/right-from-bracket-solid.svg);
+    mask-image: url(../imgs/icons/right-from-bracket-solid.svg);
+    background-color: #fff;
+    transition-duration: 0.3s;
+}
+
+.icon.logout:hover{
+    background-color: var(--secondary-light);
 }
