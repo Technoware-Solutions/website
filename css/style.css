@@ -7,6 +7,9 @@
     --primary-light: #8e99f3;
     --primary-dark: #26418f;
     --primary-text: #fff;
+    --danger: #ef5350;
+    --danger-light: #ff867c;
+    --danger-dark: #b61827;
     --secondary: #bdbdbd;
     --secondary-light: #efefef;
     --secondary-dark: #8d8d8d;
@@ -391,6 +394,91 @@ section.page div.empresas div.grid div.cards p.desc{
     text-align: center;
 }
 
+section.page div.verCurriculoBtn{
+    display: flex;
+    text-align: left;
+    width: 100%;
+}
+
+section.page div.verCurriculoBtn div.left{
+    width: 50%;
+    display: flex;
+}
+
+section.page div.verCurriculoBtn div.right{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+section.page img.fotoCurriculoCard{
+    position: relative;
+    top: 175px;
+    width: 250px;
+    border: 1px solid rgba(142, 154, 243, 0.25);
+    border-radius: 100%;
+    
+}
+
+section.page div.curriculoCard{
+    background-color: var(--secondary-light);
+    border-radius: 18px;
+    width: 100%;
+    padding: 25px;
+    padding-top: 150px;
+    border: 1px solid rgba(142, 154, 243, 0.25);
+}
+
+section.page div.curriculoCard div.infoCandidato{
+    margin-bottom: 25px;
+}
+
+section.page div.curriculoCard div.infoCandidato h1{
+    text-transform: capitalize;
+    font-weight: 700;
+    color: var(--primary-dark);
+}
+
+section.page div.curriculoCard div.infoCandidato p{
+    text-align: center;
+    font-weight: 700;
+}
+
+section.page div.curriculoCard div.grid{
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+section.page div.curriculoCard div.iconsMedia{
+    display: flex;
+    justify-content: center;
+}
+
+section.page div.curriculoCard hr{
+    margin: 5px 0;
+    height: 1px;
+    border-top: 4px dotted rgba(141, 141, 141, 0.5);
+}
+
+section.page div.curriculoCard h2{
+    text-transform: capitalize;
+    font-weight: 700;
+    color: var(--primary-dark);
+}
+
+section.page div.curriculoCard h2.right{
+
+}
+
+section.page div.curriculoCard div.sobre{
+    margin: 25px 0;
+}
+section.page div.curriculoCard div.sobre p{
+    font-weight: 600;
+    text-align: justify;
+}
+
 /* Components */
 
 a.button{
@@ -413,8 +501,24 @@ a.button:hover{
 }
 
 a.button:active{
-    border: 1px solid var(--primary-light);
-    background-color: var(--primary-light);
+    border: 1px solid var(--primary-dark);
+    background-color: var(--primary-dark);
+    color: white;
+}
+
+a.button.danger{
+    color: var(--danger-light);
+    border: 1px solid var(--danger-light);
+}
+
+a.button.danger:hover{
+    border: 1px solid var(--danger-dark);
+    color: var(--danger-dark);
+}
+
+a.button.danger:active{
+    border: 1px solid var(--danger-dark);
+    background-color: var(--danger-dark);
     color: white;
 }
 
@@ -424,6 +528,8 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    height: 220px;
     padding: 20px;
     color: var(--primary-text);
     background-color: var(--primary);
@@ -491,6 +597,48 @@ footer div.grid div ul li a:hover{
 
 .icon.show-on{
     background-image: url(../imgs/icons/eye-slash-solid.svg);
+}
+
+.icon.email{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    -webkit-mask-image: url(../imgs/icons/envelope-solid.svg);
+    mask-image: url(../imgs/icons/envelope-solid.svg);
+    background-color: var(--secondary-dark);
+    transition-duration: 0.3s;
+}
+
+.icon.phone{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    -webkit-mask-image: url(../imgs/icons/phone-solid.svg);
+    mask-image: url(../imgs/icons/phone-solid.svg);
+    background-color: var(--secondary-dark);
+    transition-duration: 0.3s;
+}
+
+.icon.linkedin{
+    width: 26.20px;
+    height: 30px;
+    margin: 10px;
+    -webkit-mask-image: url(../imgs/icons/linkedin-brands.svg);
+    mask-image: url(../imgs/icons/linkedin-brands.svg   	);
+    background-color: var(--secondary-dark);
+    transition-duration: 0.3s;
+}
+
+.icon.email:hover{
+    background-color: var(--primary-dark);
+}
+
+.icon.phone:hover{
+    background-color: var(--primary-dark);
+}
+
+.icon.linkedin:hover{
+    background-color: var(--primary-dark);
 }
 
 .icon.logout{
