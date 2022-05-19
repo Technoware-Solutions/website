@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technoware Solutions</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/main.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="left">
+                <h1><a href="../../index.html">Technoware</a></h1>
+            </div>
+            <div class="right">
+                <div class="nav-buttons">
+                    <ul>
+                        <li><a href="../cadidato/login.html">Login do Candidato</a></li>
+                        <li><a href="#" class="active">Login da Empresa</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section class="login">
+            <div class="containerLogin">
+                <div class="title">
+                    <h1>LOGIN DA EMPRESA</h1>
+                </div>
+                <form>
+                    <label for="email">E-mail</label>
+                    <div class="input">
+                        <input type="email" id="email" name="email" placeholder="Insira seu e-mail...">
+                    </div>
+
+                    <label for="cnpj">CNPJ</label>
+                    <div class="input">
+                        <input type="number" id="cnpj" name="cnpj" placeholder="Insira o CNPJ da empresa...">
+                    </div>
+
+                    <label for="senha">Senha</label>
+                    <div class="input">
+                        <input type="password" id="senha" name="senha" placeholder="Insira sua senha...">
+                        <a class="showPassword" onclick="showPassword()" href="#">Mostrar    </a>
+                    </div>
+
+                    <hr>
+
+                    <a href="./pages/perfil-da-empresa.html" class="button">LOGIN</a>
+                    <a href="./cadastro.html" class="buttonRegistro">Não tem sua conta? REGISTRE agora.</a>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,261 @@
+/* Open Sans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+    --nav-padding: 6rem;
+    --primary: #5c6bc0;
+    --primary-light: #8e99f3;
+    --primary-dark: #26418f;
+    --primary-text: #fff;
+    --secondary: #bdbdbd;
+    --secondary-light: #efefef;
+    --secondary-dark: #8d8d8d;
+    --secondary-text: #000;
+}
+
+*{
+    margin: 0;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;   
+}
+
+/* Nav */
+
+nav{
+    display: flex;
+    height: 8rem;
+    color: var(--primary-text);
+    background-color: var(--primary);
+}
+
+
+nav h1 a{
+    transition-duration: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 60px;
+    text-decoration: none;
+    color: var(--primary-text);
+}
+
+nav h1 a:hover{
+    font-size: 30px;
+}
+
+div.nav-buttons{
+    border: 1px solid var(--primary-light);
+    overflow: hidden;
+    border-radius: 100px;
+}
+
+div.nav-buttons ul{
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+div.nav-buttons ul li{
+    padding: 15px 0;
+}
+
+div.nav-buttons ul li a{
+    transition-duration: 0.15s;
+    text-decoration: none;
+    color: var(--primary-text);
+    padding: 15px 25px;
+}
+
+div.nav-buttons ul li a:hover{
+    background-color: var(--primary-light);
+    color: #fff;
+}
+
+    div.nav-buttons ul li a.active{
+    background-color: var(--primary-light);
+    color: #fff;
+}
+
+nav div.left{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    padding-left: var(--nav-padding);
+}
+
+nav div.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+nav div.right{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 50%;
+    padding-right: var(--nav-padding);
+}
+
+/* Sections */
+
+div.container section.login div.containerLogin div.grid{
+    display: grid;
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+div.container{
+    height: 100vh;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary);
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-text);
+    flex: 1;
+}
+
+section h1{
+    padding: 10px;
+    font-size: 40px;
+}
+
+section p{
+    padding: 20px;
+    width: 60%;
+}
+
+section.login{
+
+}
+
+section.login div.containerLogin{
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    border-radius: 18px;
+    border: 2px solid var(--primary-light);
+    background-color: #fff;
+}
+
+section.login div.containerLogin div.title{
+    padding: 20px;
+    color: var(--primary-dark);
+}
+
+section.login div.containerLogin div.title h1{
+    font-weight: 700;
+    text-align: center;
+    font-size: 30px;
+}
+
+section.login div.containerLogin form{
+    margin: 30px;
+}
+
+section.login div.containerLogin form *{
+    display: block;
+}
+
+section.login div.containerLogin form div{
+    margin: 5px 0;
+}
+
+section.login div.containerLogin form div.input{
+    display: flex;
+    flex-direction:row;
+    border: 1px solid var(--primary-light);
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+section.login div.containerLogin form div.input input{
+    width: 100%;
+    padding: 20px;
+    border: none;
+}
+
+section.login div.containerLogin form div.input input:focus{
+    outline: none;
+}
+
+section.login div.containerLogin form div.input a.showPassword{
+    transition-duration: 0.15s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 18px;
+    padding: 0 10px;
+    color: var(--secondary);
+}
+
+section.login div.containerLogin form div.input a.showPassword:hover{
+    background-color: var(--secondary-light);
+}
+
+section.login div.containerLogin form div.input a.showPassword:active{
+    color: white;
+    background-color: var(--secondary-dark);
+}
+
+section.login div.containerLogin form a.button{
+    transition-duration: 0.15s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 18px;
+    padding: 20px 10px;
+    color: var(--primary-light);
+    border: 1px solid var(--primary-light);
+    margin: 5px 0;
+}
+
+section.login div.containerLogin form a.button:hover{
+    border: 1px solid var(--primary-dark);
+    color: var(--primary-dark);
+}
+
+section.login div.containerLogin form a.button:active{
+    border: 1px solid var(--primary-light);
+    background-color: var(--primary-light);
+    color: white;
+}
+
+section.login div.containerLogin form a.buttonRegistro{
+    transition-duration: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 18px;
+    padding: 10px 10px;
+    color: var(--primary-light);
+    margin: 5px 0;
+}
+
+section.login div.containerLogin form a.buttonRegistro:hover{
+    color: var(--primary-dark);
+}
+
+section.login div.containerLogin form hr{
+    margin: 20px 0;
+    border: 1px dashed var(--secondary-light);
+}
