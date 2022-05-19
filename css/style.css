@@ -25,7 +25,7 @@ body{
 
 nav{
     display: flex;
-    height: 8rem;
+    padding: 20px;
     color: var(--primary-text);
     background-color: var(--primary);
 }
@@ -58,11 +58,8 @@ div.nav-buttons ul{
     display: flex;
 }
 
-div.nav-buttons ul li{
-    padding: 15px 0;
-}
-
 div.nav-buttons ul li a{
+    display: block;
     transition-duration: 0.15s;
     text-decoration: none;
     color: var(--primary-text);
@@ -82,7 +79,7 @@ div.nav-buttons ul li a:hover{
 nav div.left{
     display: flex;
     align-items: center;
-    width: 50%;
+    width: 20%;
     padding-left: var(--nav-padding);
 }
 
@@ -97,8 +94,43 @@ nav div.right{
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    width: 50%;
+    width: 80%;
     padding-right: var(--nav-padding);
+}
+
+@media screen and (max-width: 1155px){
+    nav {
+        flex-direction: column;
+    }
+
+    nav div.left{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+
+    nav div.right{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 768px){
+    div.nav-buttons{
+        border-radius: 18px;
+    }
+
+    div.nav-buttons ul{
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 /* Sections */
@@ -130,6 +162,7 @@ section{
 section h1{
     padding: 10px;
     font-size: 40px;
+    text-align: center;
 }
 
 section p{
