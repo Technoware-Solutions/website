@@ -120,7 +120,7 @@ nav div.right{
     }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 765px){
     div.nav-buttons{
         border-radius: 18px;
     }
@@ -147,7 +147,6 @@ section{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: var(--primary-text);
     flex: 1;
 }
 
@@ -157,7 +156,7 @@ section h1{
     text-align: center;
 }
 
-section p{
+section.infoIndex p{
     padding: 20px;
     width: 60%;
 }
@@ -169,6 +168,7 @@ section.login{
 
 section.infoIndex{
     background-color: var(--primary);
+    color: var(--primary-text);
     padding: 10px;
 }
 
@@ -298,7 +298,7 @@ section.login div.containerLogin form hr{
     border: 1px dashed var(--secondary-light);
 }
 
-div.grid{
+section.login div.grid{
     display: grid;
     grid-column-gap: 24px;
     grid-row-gap: 24px;
@@ -315,6 +315,166 @@ div.grid{
     div.grid{
         grid-template-columns: repeat(1, 1fr);
     }
+}
+
+/* Páginas */
+
+div.wrap{
+    display: flex;
+    flex-direction: column;
+}
+
+section.page{
+    flex: 1;
+    margin: 25px;
+    padding: 10px;
+}
+
+section.page div.empresas{
+    
+}
+
+section.page div.empresas div.grid{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+@media screen and (max-width: 1115px){
+    section.page div.empresas div.grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 852px){
+    section.page div.empresas div.grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 765px){
+    section.page div.empresas div.grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+section.page div.empresas div.grid div.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary-light);
+    border: 1px solid rgba(142, 154, 243, 0.25);
+    width: 200px;
+    height: 300px;
+    padding: 25px;
+    border-radius: 18px;
+    
+}
+
+section.page div.empresas div.grid div.cards img{
+    width: 150px;
+    border: 1px solid rgba(142, 154, 243, 0.25);
+    border-radius: 100%;
+}
+
+section.page div.empresas div.grid div.cards h1.title{
+    font-size: 22px;
+    color: var(--primary-dark);
+    padding: 10px 0 0 0;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+section.page div.empresas div.grid div.cards p.desc{
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Components */
+
+a.button{
+    transition-duration: 0.15s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 18px;
+    padding: 10px 25px;
+    color: var(--primary-light);
+    border: 1px solid var(--primary-light);
+    margin: 10px 0;
+}
+
+a.button:hover{
+    border: 1px solid var(--primary-dark);
+    color: var(--primary-dark);
+}
+
+a.button:active{
+    border: 1px solid var(--primary-light);
+    background-color: var(--primary-light);
+    color: white;
+}
+
+/* Footer */
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: var(--primary-text);
+    background-color: var(--primary);
+}
+
+footer div.grid{
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+footer div.grid h1.titleLogo span{
+    font-size: 10px;
+}
+
+footer div.grid a.logo{
+    transition-duration: 0.3s;
+    text-decoration: none;
+    color: var(--primary-text);
+}
+
+footer div.grid a.logo:hover{
+    color: var(--secondary-light);
+}
+
+footer div.grid h2{
+    color: #cfd2ee;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+footer div.grid div ul{
+    list-style: none;
+    padding: 0;
+}
+
+footer div.grid div ul li{
+
+}
+
+footer div.grid div ul li a{
+    display: block;
+    transition-duration: 0.3s;
+    padding: 6px 0;
+    color: var(--primary-text);
+    text-decoration: none;
+}
+
+footer div.grid div ul li a:hover{
+    color: var(--secondary);
+    margin-left: 10px;
 }
 
 /* Icons */
@@ -345,4 +505,6 @@ div.grid{
 
 .icon.logout:hover{
     background-color: var(--secondary-light);
+    width: 25px;
+    height: 25px;
 }
