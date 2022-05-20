@@ -36,25 +36,30 @@
             <img src="../../../imgs/no-image.jpg" class="fotoCurriculoCard" alt="Imagem de perfil">
             <div class="verCurriculoBtn">
                 <div class="left">
-
-                </div>
-                <div class="right">
-                    <a href="./ver-curriculo.html" class="button success">Criar currículo</a>
+                    <a href="./criar-curriculo.html" class="button success">Criar currículo</a>
                 </div>
             </div>
-            <form action="" class="formCriarCurriculo">
-                <div class="curriculoCard">
+            <div class="curriculoCard">
+                <form action="" class="formCriarCurriculo">
                     <div class="infoCandidato">
-                        <h1>JOHN DOE</h1>
-                        <div class="center-flex">
-                            <label for="cargo">Cargo do candidato</label>
-                            <input value="" name="cargo">
+                        <div class="input">
+                            <div class="components">
+                                <label for="nome">NOME DO CANDIDATO</label>
+                                <input type="text" name="nome">
+                            </div>
                         </div>
-                        
-                        <div class="center-flex">
-                            <label for="cargo">Endereço</label>
-                            <input value="" name="cargo">
+                        <div class="input">
+                            <div class="components">
+                                <label for="cargo">CARGO DO CANDIDATO</label>
+                                <input type="text" name="cargo">
+                            </div>
                         </div>
+                        <div class="input">
+                            <div class="components">
+                                <label for="endereco">ENDEREÇO</label>
+                                <input type="text" name="endereco">
+                            </div>
+                        </div>                        
                         
                         <div class="iconsMedia">
                             <a href="#" class="icon email"></a>
@@ -62,49 +67,164 @@
                             <a href="#" class="icon linkedin"></a>
                         </div>
                     </div>
-
                     <div class="sobre">
-                        <h2>SOBRE</h2>
                         <div class="input">
-                            <textarea>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nihil enim, ab quia recusandae accusamus voluptatum vero minima, reprehenderit quidem excepturi deleniti! Mollitia autem soluta animi expedita nam quia praesentium? Enim, soluta quidem, eius provident molestias quis minima sunt blanditiis quibusdam pariatur quasi ea obcaecati quae? Voluptatem repellat ipsum sequi, sint explicabo laboriosam totam est excepturi enim, veniam deleniti nesciunt? Recusandae necessitatibus omnis eum, eos vitae voluptatem at excepturi similique sit vero suscipit, ipsum molestias temporibus, voluptatum repellat reiciendis error cum aspernatur rerum? Consequatur hic molestiae eligendi?</textarea>
+                            <div class="components full">
+                                <h2>SOBRE</h2>
+                                <textarea></textarea>
+                            </div>
                         </div>
                     </div>
-
+                    
                     <div class="grid">
                         <div class="left">
                             <h2>EXPERIÊNCIA PROFISSIONAL</h2>
                             <hr>
-                            <input value="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum ut eveniet nam ea laboriosam, nobis ratione dolores cum tenetur velit. Distinctio explicabo saepe quod laborum nostrum, blanditiis rem esse enim." name="cargo" class="full-width">
-                            <input value="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum ut eveniet nam ea laboriosam, nobis ratione dolores cum tenetur velit. Distinctio explicabo saepe quod laborum nostrum, blanditiis rem esse enim." name="cargo" class="full-width">
-                            <input value="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum ut eveniet nam ea laboriosam, nobis ratione dolores cum tenetur velit. Distinctio explicabo saepe quod laborum nostrum, blanditiis rem esse enim." name="cargo" class="full-width">
+                            <div class="input">
+                                <div class="components full">
+                                    <label for="nomeEmpresa">NOME DA EMPRESA</label>
+                                    <input type="text" name="nomeEmpresa">
+                                </div>
+                            </div>
+                            <div class="gridInputs">
+                                <div class="input">
+                                    <div class="components full">
+                                        <label for="cargo">CARGO</label>
+                                        <input type="text" name="cargo">
+                                    </div>
+                                </div>
+                                <div class="input">
+                                    <div class="components full">
+                                        <label for="setor">SETOR</label>
+                                        <input type="text" name="setor">
+                                    </div>
+                                </div>
+                                <div class="input">
+                                    <div class="components full">
+                                        <label for="dataInicio">DATA DE INÍCIO</label>
+                                        <input type="date" name="dataInicio">
+                                    </div>
+                                </div>
+                                <div class="input">
+                                    <div class="components full">
+                                        <label for="dataFim">DATA DE SAÍDA</label>
+                                        <input type="date" name="dataFim">
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="button success">Adicionar experiência</a>
                         </div>
-
                         <div class="right">
                             <h2>FORMAÇÃO ACADÊMICA</h2>
                             <hr>
-                            <input value="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum ut eveniet nam ea laboriosam, nobis ratione dolores cum tenetur velit. Distinctio explicabo saepe quod laborum nostrum, blanditiis rem esse enim." name="cargo" class="full-width">
-                            <input value="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum ut eveniet nam ea laboriosam, nobis ratione dolores cum tenetur velit. Distinctio explicabo saepe quod laborum nostrum, blanditiis rem esse enim." name="cargo" class="full-width">
-                            <input value="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum ut eveniet nam ea laboriosam, nobis ratione dolores cum tenetur velit. Distinctio explicabo saepe quod laborum nostrum, blanditiis rem esse enim." name="cargo" class="full-width">
-                        </div>
-
+                            <div class="input">
+                                <div class="components full">
+                                    <label for="nomeCurso">NOME DO CURSO</label>
+                                    <input type="text" name="nomeCurso">
+                                </div>
+                            </div>
+                            <div class="gridInputs">
+                                <div class="input">
+                                    <div class="components full">
+                                        <label for="nomeAcademica">INSTITUIÇÃO ACADÊMICA</label>
+                                    <input type="text" name="nomeAcademica">
+                                    </div>
+                                </div>
+                                <div class="input">
+                                    <div class="components full">
+                                        <label for="grau">GRAU DE FORMAÇÃO</label>
+                                        <input type="text" name="grau">
+                                    </div>
+                                </div>
+                                <div class="input">
+                                    <div class="components full">
+                                        <label for="dataInicioAcademica">DATA DE INÍCIO</label>
+                                        <input type="date" name="dataInicioAcademica">
+                                    </div>
+                                </div>
+                                <div class="input">
+                                    <div class="components full">
+                                        <label for="dataFim">DATA DE SAÍDA</label>
+                                        <input type="date" name="dataFim">
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="button success">Adicionar formação</a>                        </div>
                         <div class="left">
-                            <h2>CURSOS E CERTIFICADOS</h2>
+                            <h2>CERTIFICADOS</h2>
                             <hr>
-                            <input value="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum ut eveniet nam ea laboriosam, nobis ratione dolores cum tenetur velit. Distinctio explicabo saepe quod laborum nostrum, blanditiis rem esse enim." name="cargo" class="full-width">
-                            <input value="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum ut eveniet nam ea laboriosam, nobis ratione dolores cum tenetur velit. Distinctio explicabo saepe quod laborum nostrum, blanditiis rem esse enim." name="cargo" class="full-width">
-                            <input value="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum ut eveniet nam ea laboriosam, nobis ratione dolores cum tenetur velit. Distinctio explicabo saepe quod laborum nostrum, blanditiis rem esse enim." name="cargo" class="full-width">
-                        </div>
-
+                            <div class="input">
+                                <div class="components full">
+                                    <label for="nomeInstCertificado">NOME DA INSTITUIÇÃO</label>
+                                    <input type="text" name="nomeInstCertificado">
+                                </div>
+                            </div>
+                            <div class="gridInputs">
+                                <div class="input">
+                                    <div class="components full">
+                                        <label for="tituloCertificado">TITULO</label>
+                                        <input type="text" name="tituloCertificado">
+                                    </div>
+                                </div>
+                                <div class="input">
+                                    <div class="components full">
+                                        <label for="nota">NOTA</label>
+                                        <input type="text" name="nota">
+                                    </div>
+                                </div>
+                                <div class="input">
+                                    <div class="components full">
+                                        <label for="dataInicioCertificado">DATA DE INÍCIO</label>
+                                        <input type="date" name="dataInicioCertificado">
+                                    </div>
+                                </div>
+                                <div class="input">
+                                    <div class="components full">
+                                        <label for="dataFimCertificado">DATA DE SAÍDA</label>
+                                        <input type="date" name="dataFimCertificado">
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="button success">Adicionar certificado</a>                        </div>
                         <div class="right">
                             <h2>IDIOMAS</h2>
                             <hr>
-                            <input value="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum ut eveniet nam ea laboriosam, nobis ratione dolores cum tenetur velit. Distinctio explicabo saepe quod laborum nostrum, blanditiis rem esse enim." name="cargo" class="full-width">
-                            <input value="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum ut eveniet nam ea laboriosam, nobis ratione dolores cum tenetur velit. Distinctio explicabo saepe quod laborum nostrum, blanditiis rem esse enim." name="cargo" class="full-width">
-                            <input value="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum ut eveniet nam ea laboriosam, nobis ratione dolores cum tenetur velit. Distinctio explicabo saepe quod laborum nostrum, blanditiis rem esse enim." name="cargo" class="full-width">
-                        </div>
+                            <div class="input">
+                                <div class="components full">
+                                    <label for="idioma">IDIOMA</label>
+                                    <input type="text" name="idioma">
+                                </div>
+                            </div>
+                            <div class="gridInputs">
+                                <div class="input">
+                                    <div class="components full">
+                                        <label for="instituicaoIdioma">INSTITUIÇÃO DE ENSINO</label>
+                                        <input type="text" name="cargo">
+                                    </div>
+                                </div>
+                                <div class="input">
+                                    <div class="components full">
+                                        <label for="formacaoIdioma">GRAU DE FORMAÇÃO</label>
+                                        <input type="text" name="formacaoIdioma">
+                                    </div>
+                                </div>
+                                <div class="input">
+                                    <div class="components full">
+                                        <label for="dataInicioIdioma">DATA DE INÍCIO</label>
+                                        <input type="date" name="dataInicioIdioma">
+                                    </div>
+                                </div>
+                                <div class="input">
+                                    <div class="components full">
+                                        <label for="dataFimIdioma">DATA DE SAÍDA</label>
+                                        <input type="date" name="dataFimIdioma">
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="button success">Adicionar idioma</a>                        </div>
                     </div>
-                </div>
-            </form>
+                </form>
+            </div>
         </section>
 
         <footer>

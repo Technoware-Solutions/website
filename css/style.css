@@ -312,6 +312,13 @@ section.login div.grid{
     grid-template-columns: repeat(3, 1fr);
 }
 
+div.gridInputs{
+    display: grid;
+    grid-column-gap: 24px;
+    grid-row-gap: 0;
+    grid-template-columns: repeat(2, 1fr);
+}
+
 @media screen and (max-width: 1265px){
     div.grid{
         grid-template-columns: repeat(2, 1fr);
@@ -432,7 +439,7 @@ section.page div.vagas div.grid div.cards{
     justify-content: center;
     background-color: var(--secondary-light);
     border: 1px solid rgba(142, 154, 243, 0.25);
-    width: 300px;
+    width: 200px;
     height: 150px;
     padding: 25px;
     border-radius: 18px;
@@ -598,6 +605,7 @@ section.page div.candidatos-aplicantes div.candidatoCard div.info2{
     text-align: center;
     align-items: center;
     display: flex;
+    justify-content: flex-end;
 }
 
 section.page div.candidatos-aplicantes div.candidatoCard div.info2 h1,h3{
@@ -620,13 +628,7 @@ section.page div.curriculoCard div.sobre p{
 
 form.formCriarCurriculo{
     display: flex;
-}
-
-
-label{
-    font-weight: 500;
-    font-size: 12px;
-    color: var(--secondary-dark);
+    flex-direction: column;
 }
 
 .center-flex{
@@ -639,12 +641,9 @@ label{
 
 form.formCriarCurriculo div.input{
     display: flex;
-    width: auto;
-    flex-direction:row;
+    flex-direction: column;
     align-items: center;
-    border: 1px solid var(--primary-light);
-    border-radius: 18px;
-    overflow: hidden;
+    width: 100%;
 }
 
 form.formCriarCurriculo input.full-width{
@@ -653,25 +652,35 @@ form.formCriarCurriculo input.full-width{
 form.formCriarCurriculo input{
     margin: 5px 0;
     padding: 15px 20px;
-    width: 500px;
+    border: none;
+    border-radius: 18px;
+    border: 1px solid var(--primary-light);
+}   
+
+form.formCriarCurriculo div.input div.components{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+form.formCriarCurriculo div.input div.components.full{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form.formCriarCurriculo div.input textarea{
+    resize: none;
+    height: 300px;
+    overflow-wrap: break-word;
+    padding: 20px;
     border: none;
     border-radius: 18px;
     border: 1px solid var(--primary-light);
 }
 
-form.formCriarCurriculo div.input textarea{
-    resize: none;
-    width: 100%;
-    height: 300px;
-    overflow-wrap: break-word;
-    padding: 20px;
-    border: none;
-}
-
 form.formCriarCurriculo div.input input:focus{
     outline: none;
 }
-
 
 /* Components */
 
