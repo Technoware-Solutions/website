@@ -10,6 +10,9 @@
     --danger: #ef5350;
     --danger-light: #ff867c;
     --danger-dark: #b61827;
+    --success: #66bb6a;
+    --success-light: #98ee99;
+    --success-dark: #338a3e;
     --secondary: #bdbdbd;
     --secondary-light: #efefef;
     --secondary-dark: #8d8d8d;
@@ -19,6 +22,7 @@
 *{
     margin: 0;
 }
+
 
 body{
     font-family: 'Open Sans', sans-serif;   
@@ -101,7 +105,7 @@ nav div.right{
     padding-right: var(--nav-padding);
 }
 
-@media screen and (max-width: 1155px){
+@media screen and (max-width: 1240px){
     nav {
         flex-direction: column;
     }
@@ -123,7 +127,7 @@ nav div.right{
     }
 }
 
-@media screen and (max-width: 765px){
+@media screen and (max-width: 806px){
     div.nav-buttons{
         border-radius: 18px;
     }
@@ -393,6 +397,66 @@ section.page div.empresas div.grid div.cards p.desc{
     font-size: 14px;
     text-align: center;
 }
+section.page div.vagas{
+    
+}
+
+section.page div.vagas div.grid{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+@media screen and (max-width: 1115px){
+    section.page div.vagas div.grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 852px){
+    section.page div.vagas div.grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 765px){
+    section.page div.vagas div.grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+section.page div.vagas div.grid div.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary-light);
+    border: 1px solid rgba(142, 154, 243, 0.25);
+    width: 300px;
+    height: 150px;
+    padding: 25px;
+    border-radius: 18px;
+    
+}
+
+section.page div.vagas div.grid div.cards img{
+    width: 150px;
+    border: 1px solid rgba(142, 154, 243, 0.25);
+    border-radius: 100%;
+}
+
+section.page div.vagas div.grid div.cards h1.title{
+    font-size: 22px;
+    color: var(--primary-dark);
+    padding: 10px 0 0 0;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+section.page div.vagas div.grid div.cards p.desc{
+    font-size: 14px;
+    text-align: center;
+}
 
 section.page div.verCurriculoBtn{
     display: flex;
@@ -413,6 +477,7 @@ section.page div.verCurriculoBtn div.right{
 
 section.page img.fotoCurriculoCard{
     position: relative;
+    margin-top: -175px;
     top: 175px;
     width: 250px;
     border: 1px solid rgba(142, 154, 243, 0.25);
@@ -474,12 +539,155 @@ section.page div.curriculoCard h2.right{
 section.page div.curriculoCard div.sobre{
     margin: 25px 0;
 }
+
+section.page div.curriculoCard div.sobre h2{
+    text-align: center;
+    margin: 10px;
+}
+
+section.page div.candidatos-aplicantes{
+}
+
+section.page div.candidatos-aplicantes div.candidatoCard{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+    width: 800px;
+    padding: 20px;
+    border-radius: 18px;
+    background-color: var(--secondary-light);
+    border: 1px solid rgba(142, 154, 243, 0.25);
+    align-items: center;
+    margin: 10px 0;
+}
+section.page div.candidatos-aplicantes div.candidatoCard div.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.page div.candidatos-aplicantes div.candidatoCard div.image img{
+    border-radius: 100%;
+    border: 1px solid rgba(142, 154, 243, 0.5);
+    width: 150px;
+}
+
+div.info-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+section.page div.candidatos-aplicantes div.candidatoCard div.info1{
+    width: 50%;
+    grid-column: 1/4;
+}
+
+section.page div.candidatos-aplicantes div.candidatoCard div.info1 h1{
+    text-align: left;
+    font-weight: 700;
+    color: var(--primary-dark);
+    padding: 0;
+}
+
+section.page div.candidatos-aplicantes div.candidatoCard div.info1 h3{
+    text-align: left;
+    font-weight: 500;
+    padding: 0;
+}
+
+section.page div.candidatos-aplicantes div.candidatoCard div.info2{
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+
+section.page div.candidatos-aplicantes div.candidatoCard div.info2 h1,h3{
+    padding: 0;
+}
+
+section.page div.candidatos-aplicantes div.candidatoCard div.info2 h3{
+    font-weight: 700;
+    color: var(--primary-dark);
+}
+
+section.page div.candidatos-aplicantes div.candidatoCard div.info2 h1{
+    font-weight: 400;
+}
+
 section.page div.curriculoCard div.sobre p{
     font-weight: 600;
     text-align: justify;
 }
 
+form.formCriarCurriculo{
+    display: flex;
+}
+
+
+label{
+    font-weight: 500;
+    font-size: 12px;
+    color: var(--secondary-dark);
+}
+
+.center-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+form.formCriarCurriculo div.input{
+    display: flex;
+    width: auto;
+    flex-direction:row;
+    align-items: center;
+    border: 1px solid var(--primary-light);
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+form.formCriarCurriculo input.full-width{
+    width: 800px;
+}
+form.formCriarCurriculo input{
+    margin: 5px 0;
+    padding: 15px 20px;
+    width: 500px;
+    border: none;
+    border-radius: 18px;
+    border: 1px solid var(--primary-light);
+}
+
+form.formCriarCurriculo div.input textarea{
+    resize: none;
+    width: 100%;
+    height: 300px;
+    overflow-wrap: break-word;
+    padding: 20px;
+    border: none;
+}
+
+form.formCriarCurriculo div.input input:focus{
+    outline: none;
+}
+
+
 /* Components */
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 50px 0;
+    background: rgb(92,107,192);
+    background: linear-gradient(180deg, rgba(92,107,192,0.2) 0%, rgba(140,154,237,0.2) 100%);
+}
+
+header h1.page-title{
+    color: var(--primary-dark);
+}
 
 a.button{
     transition-duration: 0.15s;
@@ -508,7 +716,7 @@ a.button:active{
 
 a.button.danger{
     color: var(--danger-light);
-    border: 1px solid var(--danger-light);
+    border: 1px solid var(--danger-dark);
 }
 
 a.button.danger:hover{
@@ -521,6 +729,23 @@ a.button.danger:active{
     background-color: var(--danger-dark);
     color: white;
 }
+
+a.button.success{
+    color: var(--success);
+    border: 1px solid var(--success);
+}
+
+a.button.success:hover{
+    border: 1px solid var(--success-dark);
+    color: var(--success-dark);
+}
+
+a.button.success:active{
+    border: 1px solid var(--success-dark);
+    background-color: var(--success-dark);
+    color: white;
+}
+
 
 /* Footer */
 
