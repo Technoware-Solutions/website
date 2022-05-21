@@ -179,6 +179,43 @@ section.infoIndex{
     padding: 10px;
 }
 
+section.sitemap{
+    background-color: var(--primary);
+    color: var(--primary-text);
+    padding: 10px;
+}
+
+section.sitemap div.grid{
+    display: grid;
+    margin: 12px;
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+section.sitemap div.grid a.cards{
+    transition: 0.15s;
+    display: flex;
+    width: 300px;
+    height: 100px;
+    background-color: white;
+    text-decoration: none;
+    color: var(--primary);
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 18px;
+    align-items: center;
+    justify-content: center;
+}
+
+section.sitemap div.grid a.cards:hover{
+    background-color: var(--secondary-light);
+}
+
+section.sitemap div.grid a.cards:active{
+    background-color: var(--secondary);
+}
+
 section.login div.containerLogin{
     color: #000;
     display: flex;
@@ -746,6 +783,22 @@ a.button.success:active{
     color: white;
 }
 
+a.button.white{
+    color: white;
+    border: 1px solid white;
+}
+
+a.button.white:hover{
+    border: 1px solid var(--secondary);
+    color: var(--secondary);
+}
+
+a.button.white:active{
+    border: 1px solid var(--secondary);
+    background-color: white;
+    color: var(--primary);
+}
+
 
 /* Footer */
 
@@ -804,6 +857,27 @@ footer div.grid div ul li a{
 }
 
 footer div.grid div ul li a:hover{
+    color: var(--secondary);
+    margin-left: 10px;
+}
+
+footer div.grid div ul.sitemap{
+    list-style: none;
+    margin-top: 40px;
+    padding: 0;
+}
+
+footer div.grid div ul.sitemap li a{
+    display: block;
+    transition-duration: 0.3s;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 6px 0;
+    color: var(--primary-text);
+    text-decoration: none;
+}
+
+footer div.grid div ul.sitemap li a:hover{
     color: var(--secondary);
     margin-left: 10px;
 }
